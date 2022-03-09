@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <title>Contactanos |Lorem ipsum</title>
+    <style>
+
+    * {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+        background-color: #e5e5f7;
+        background-image:  linear-gradient(#7AACFE 1px, transparent 1px), linear-gradient(to right, #7AACFE 1px, #e5e5f7 1px);
+        background-size: 20px 20px;
+    }
+    #menu {
+        top: 0;
+        display: flex;
+        justify-content: space-around;
+        background-color: #FE7AAC;
+        color: white;
+        font-weight: bold;
+        height: 27px;
+        padding: 13px 15px 0 20px;
+        position: sticky;
+        z-index: 9;
+    }
+
+    .contenido {
+        max-width:400px;
+        width:100%;
+        margin:0 auto;
+        position:relative;
+    }
+
+    #contacto {
+        background:#F9F9F9;
+        padding:25px;
+        margin:50px 0;
+    }
+
+    #contacto h2 {
+        color: black;
+        font-size: 30px;
+        font-weight: 400;
+        display:block;
+        margin: 0;
+    }
+
+    #contacto h3 {
+        display:block;
+        font-size: 15px;
+    }
+
+    #contacto input {
+        width:95%;
+        border:1px solid #CCC;
+        background:#FFF;
+        margin:0 0 2px;
+        padding:10px;
+    }
+
+    #contacto textarea {
+        height:100px;
+        max-width:100%;
+        border:1px solid #CCC;
+        padding:10px;
+        width: 95%;
+        resize:none;
+    }
+
+    #contacto button {
+        cursor:pointer;
+        width:100%;
+        border:none;
+        background:#ACFE7A;
+        color:#FFF;
+        margin:0 0 5px;
+        padding:10px;
+        font-size:15px;
+    }
+
+    fieldset {
+        border: medium none !important;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="top-content"></div>
+
+    <div id="menu">
+        <div>Inicio</div>
+        <div>Historia</div>
+        <div>Productos</div>
+        <div>Sucursales</div>
+        <div>Contacto</div>
+    </div>
+
+
+    <div class="contenido">
+        <form id="contacto" action="">
+            <h2>Contactanos</h2>
+            <h3>Póngase en contacto con nosotros hoy mismo y reciba una respuesta en 24 horas.</h3>
+            <fieldset>
+                <input placeholder="Su nombre" type="text">
+            </fieldset>
+            <fieldset>
+                <input placeholder="Su correo electronico" type="email">
+            </fieldset>
+            <fieldset>
+                <input placeholder="Su numero telefonico" type="tel">
+            </fieldset>
+            <fieldset>
+                <textarea placeholder="Introduzca su mensaje aqui..." id="" cols="30" rows="10"></textarea>
+            </fieldset>
+            <fieldset>
+                <button name="subir" type="submit" id="contacto-subir">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
